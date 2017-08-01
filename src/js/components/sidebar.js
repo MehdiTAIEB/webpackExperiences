@@ -20,23 +20,22 @@ export default class Sidebar extends React.Component {
 		return rows;
 	}
 	handleClick(i) {
+		// allegedly suppose to trigger route change
 		alert(i);
 	}
 	renderList() {
 		var rows = this.generateRows();
 		return (
-			<div>
+			<ul>
 			{rows}			
-			</div>
+			</ul>
 		);
 	}
 	render() {
 		return(
 			<div id="sidebar">
 				<h1>Sidebar Maine</h1>
-				<ul>
 					{this.renderList()}
-				</ul>
 			</div>
 		);
 	}
