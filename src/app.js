@@ -2,8 +2,9 @@ require('./app.scss');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Main from './main';
 
 ReactDOM.render(
-	<h1>LOL</h1>,
+	<Main />,
 	document.getElementById('root')	
 );
