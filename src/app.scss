@@ -1,6 +1,22 @@
 body {
-	background-color: pink;
-	p {
-		color: blue;
+	font: 100% Helvetica, sans-serif;
+	background-color: #0E0b16;
+	color: #E7DFDD;
+	div {
+		footer {
+			h1 {
+				background-color: blue;				
+			}
+		}
+		header {
+			h1 {
+				background-color: red;
+			}
+		}
+		#sidebar {
+			h1 {
+				background-color: green;
+			}
+		}
 	}
 }
