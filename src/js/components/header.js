@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class header extends React.Component {
+export default class Header extends React.Component {
 	render() {
 		return(
-			<h1>Maine</h1>
+			<header>
+				<h1>header Maine</h1>
+			</header>
 		);
 	}
 }
