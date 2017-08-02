@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import List from './list';
+import Ul from './ul';
 
 export default class Sidebar extends React.Component {
 	constructor() {
@@ -12,30 +12,11 @@ export default class Sidebar extends React.Component {
 			el: Array(10).fill({name:'asd', id: 2})
 		};
 	}
-	generateRows () {
-		var rows = [];
-		rows = this.state.el.map((e, i) =>
-			<List key={i} value={e.name} onClick={() => this.handleClick(e.id)}/>
-		);
-		return rows;
-	}
-	handleClick(i) {
-		// allegedly suppose to trigger route change
-		alert(i);
-	}
-	renderList() {
-		var rows = this.generateRows();
-		return (
-			<ul>
-			{rows}			
-			</ul>
-		);
-	}
 	render() {
 		return(
 			<div id="sidebar">
 				<h1>Sidebar Maine</h1>
-					{this.renderList()}
+				<Ul data={this.state.el} />
 			</div>
 		);
 	}
