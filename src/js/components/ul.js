@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import List from './list';
+import List from './li';
 
 export default class Ul extends React.Component {
 	 generateRows (data) {
@@ -13,7 +13,7 @@ export default class Ul extends React.Component {
 	 }
 	 handleClick(i) {
 	 	// allegedly suppose to trigger route change
-	 	alert(i);
+	 	console.log(i);
 	 }
 	render() {
 		return(
