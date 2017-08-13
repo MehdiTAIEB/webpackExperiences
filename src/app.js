@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Main from './js/main';
 import List from './js/list';
+import Category from './js/category';
 
 const app = document.getElementById('root');
 
@@ -14,7 +15,9 @@ ReactDOM.render(
 		<div>
 			<Route exact path="/" component={Main}>
 			</Route>
-			<Route path="/list" component={List}>
+			<Route exact path="/list" component={List}>
+			</Route>
+			<Route path="/list/:category" component={Category}>
 			</Route>
 		</div>
 	</BrowserRouter>,

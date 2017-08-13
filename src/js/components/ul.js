@@ -7,7 +7,7 @@ export default class Ul extends React.Component {
 	 generateRows (data) {
 	 	var rows = [];
 	 	rows = data.map((e, i) =>
-	 		<List key={i} value={e.name} onClick={() => this.handleClick(e.id)}/>
+	 		<List key={i} value={e.name} route={e.route} onClick={() => this.handleClick(e)}/>
 	 	);
 	 	return rows;
 	 }
