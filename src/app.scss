@@ -12,10 +12,38 @@ body {
 			h1 {
 				background-color: red;
 			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				li {
+					float: left;
+				}
+				li a {
+					color: white;
+					display: block;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+			}
 		}
 		aside {
 			h1 {
 				background-color: green;
+			}
+			ul {
+ 				list-style-type: none;
+    			margin: 0;
+    			padding: 0;
+    			width: 200px;
+    			li a {
+    				color: white;
+ 				    display: block;
+    				padding: 8px 16px;
+    				text-decoration: none;
+				}
 			}
 		}
 	}

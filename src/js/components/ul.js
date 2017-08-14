@@ -12,7 +12,6 @@ export default class Ul extends React.Component {
 	 	return rows;
 	 }
 	 handleClick(i) {
-	 	// allegedly suppose to trigger route change
 	 	console.log(i);
 	 }
 	render() {
